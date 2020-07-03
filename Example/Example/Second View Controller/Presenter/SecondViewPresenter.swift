@@ -10,19 +10,20 @@ import Foundation
 import HealthKit
 
 protocol SecondViewPresenterProtocol {
-    var days: [Day]! { get }
+    var days: [BarValueData]! { get }
     var view: SecondViewProtocol! { get set }
     
     init(with view: SecondViewProtocol)
     
     func getDataFromLastWeak()
+    func getDaysInWeek() -> [Date]
 }
 
 
 class SecondViewPresenter: SecondViewPresenterProtocol {
     unowned var view: SecondViewProtocol!
     let healthKit = HKHealthStore()
-    private(set) var days: [Day]!
+    private(set) var days: [BarValueData]!
     
     let semaphore = DispatchSemaphore(value: 1)
     
@@ -60,6 +61,7 @@ class SecondViewPresenter: SecondViewPresenterProtocol {
         }
         
         group.notify(queue: .main) {
+            self.days = arr
             self.view.onSuccess(data: arr.reversed())
         }
     }

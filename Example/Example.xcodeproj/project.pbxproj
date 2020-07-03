@@ -27,6 +27,16 @@
 		49B40A1D24AF62AF007CA592 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B40A1C24AF62AF007CA592 /* Day.swift */; };
 		49B40A2224AF63D0007CA592 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B40A2124AF63D0007CA592 /* Utils.swift */; };
 		49B40A2624AF64DD007CA592 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B40A2524AF64DD007CA592 /* HealthKit.framework */; };
+		49B40A2B24AF663E007CA592 /* SimpleBarChartViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B40A2A24AF663E007CA592 /* SimpleBarChartViewTests.swift */; };
+		49B40A2F24AF6D28007CA592 /* SimpleBarChartPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B40A2E24AF6D28007CA592 /* SimpleBarChartPresenterTests.swift */; };
+		49B40A3224AF6FF5007CA592 /* ArrayExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B40A3124AF6FF5007CA592 /* ArrayExtensionsTests.swift */; };
+		49B40A3524AF738D007CA592 /* BarDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B40A3424AF738D007CA592 /* BarDataTests.swift */; };
+		49B40A3724AF7507007CA592 /* BarValueDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B40A3624AF7507007CA592 /* BarValueDataTests.swift */; };
+		49B40A3924AF75C8007CA592 /* BarCharLineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B40A3824AF75C8007CA592 /* BarCharLineTests.swift */; };
+		49B40A3B24AF762A007CA592 /* BarChartConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B40A3A24AF762A007CA592 /* BarChartConfigurationTests.swift */; };
+		49B40A3D24AF7691007CA592 /* FirstViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B40A3C24AF7691007CA592 /* FirstViewControllerTests.swift */; };
+		49B40A3F24AF7A93007CA592 /* SeconViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B40A3E24AF7A93007CA592 /* SeconViewControllerTests.swift */; };
+		49B40A4124AF7EB6007CA592 /* SecondPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B40A4024AF7EB6007CA592 /* SecondPresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +75,16 @@
 		49B40A2124AF63D0007CA592 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		49B40A2324AF64DD007CA592 /* Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Example.entitlements; sourceTree = "<group>"; };
 		49B40A2524AF64DD007CA592 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		49B40A2A24AF663E007CA592 /* SimpleBarChartViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleBarChartViewTests.swift; sourceTree = "<group>"; };
+		49B40A2E24AF6D28007CA592 /* SimpleBarChartPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleBarChartPresenterTests.swift; sourceTree = "<group>"; };
+		49B40A3124AF6FF5007CA592 /* ArrayExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensionsTests.swift; sourceTree = "<group>"; };
+		49B40A3424AF738D007CA592 /* BarDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarDataTests.swift; sourceTree = "<group>"; };
+		49B40A3624AF7507007CA592 /* BarValueDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarValueDataTests.swift; sourceTree = "<group>"; };
+		49B40A3824AF75C8007CA592 /* BarCharLineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCharLineTests.swift; sourceTree = "<group>"; };
+		49B40A3A24AF762A007CA592 /* BarChartConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartConfigurationTests.swift; sourceTree = "<group>"; };
+		49B40A3C24AF7691007CA592 /* FirstViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewControllerTests.swift; sourceTree = "<group>"; };
+		49B40A3E24AF7A93007CA592 /* SeconViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeconViewControllerTests.swift; sourceTree = "<group>"; };
+		49B40A4024AF7EB6007CA592 /* SecondPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPresenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +140,9 @@
 		49B409F424AF6084007CA592 /* ExampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				49B40A2924AF6611007CA592 /* Second */,
+				49B40A2824AF660B007CA592 /* First */,
+				49B40A2724AF65FD007CA592 /* SimpleBarChart */,
 				49B409F524AF6084007CA592 /* ExampleTests.swift */,
 				49B409F724AF6084007CA592 /* Info.plist */,
 			);
@@ -235,6 +258,69 @@
 				49B40A2524AF64DD007CA592 /* HealthKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49B40A2724AF65FD007CA592 /* SimpleBarChart */ = {
+			isa = PBXGroup;
+			children = (
+				49B40A3324AF7368007CA592 /* Models */,
+				49B40A3024AF6FE2007CA592 /* Extensions */,
+				49B40A2D24AF6CB5007CA592 /* Presenter */,
+				49B40A2C24AF6CAE007CA592 /* View */,
+			);
+			path = SimpleBarChart;
+			sourceTree = "<group>";
+		};
+		49B40A2824AF660B007CA592 /* First */ = {
+			isa = PBXGroup;
+			children = (
+				49B40A3C24AF7691007CA592 /* FirstViewControllerTests.swift */,
+			);
+			path = First;
+			sourceTree = "<group>";
+		};
+		49B40A2924AF6611007CA592 /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				49B40A3E24AF7A93007CA592 /* SeconViewControllerTests.swift */,
+				49B40A4024AF7EB6007CA592 /* SecondPresenterTests.swift */,
+			);
+			path = Second;
+			sourceTree = "<group>";
+		};
+		49B40A2C24AF6CAE007CA592 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				49B40A2A24AF663E007CA592 /* SimpleBarChartViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		49B40A2D24AF6CB5007CA592 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				49B40A2E24AF6D28007CA592 /* SimpleBarChartPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		49B40A3024AF6FE2007CA592 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				49B40A3124AF6FF5007CA592 /* ArrayExtensionsTests.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		49B40A3324AF7368007CA592 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				49B40A3424AF738D007CA592 /* BarDataTests.swift */,
+				49B40A3624AF7507007CA592 /* BarValueDataTests.swift */,
+				49B40A3824AF75C8007CA592 /* BarCharLineTests.swift */,
+				49B40A3A24AF762A007CA592 /* BarChartConfigurationTests.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,7 +446,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49B40A3D24AF7691007CA592 /* FirstViewControllerTests.swift in Sources */,
 				49B409F624AF6084007CA592 /* ExampleTests.swift in Sources */,
+				49B40A3724AF7507007CA592 /* BarValueDataTests.swift in Sources */,
+				49B40A3B24AF762A007CA592 /* BarChartConfigurationTests.swift in Sources */,
+				49B40A2F24AF6D28007CA592 /* SimpleBarChartPresenterTests.swift in Sources */,
+				49B40A3524AF738D007CA592 /* BarDataTests.swift in Sources */,
+				49B40A2B24AF663E007CA592 /* SimpleBarChartViewTests.swift in Sources */,
+				49B40A3F24AF7A93007CA592 /* SeconViewControllerTests.swift in Sources */,
+				49B40A3924AF75C8007CA592 /* BarCharLineTests.swift in Sources */,
+				49B40A3224AF6FF5007CA592 /* ArrayExtensionsTests.swift in Sources */,
+				49B40A4124AF7EB6007CA592 /* SecondPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,8 +609,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Example/Example.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 24JXP22GSE;
 				INFOPLIST_FILE = Example/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -522,6 +619,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = vyashunin.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -532,8 +630,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Example/Example.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 24JXP22GSE;
 				INFOPLIST_FILE = Example/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -541,6 +640,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = vyashunin.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -552,6 +652,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 24JXP22GSE;
 				INFOPLIST_FILE = ExampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -573,6 +674,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 24JXP22GSE;
 				INFOPLIST_FILE = ExampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (

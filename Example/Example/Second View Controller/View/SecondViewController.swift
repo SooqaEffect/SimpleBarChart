@@ -17,10 +17,6 @@ protocol SecondViewProtocol: class {
 }
 
 class SecondViewController: UIViewController, SecondViewProtocol {
-    func onError(errorString: String) {
-        
-    }
-    
     @IBOutlet weak var chartView: SimpleBarChartView!
     
     var presenter: SecondViewPresenterProtocol!
@@ -45,6 +41,13 @@ class SecondViewController: UIViewController, SecondViewProtocol {
     
     func onSuccess(data: [BarValueData]) {
         chartView.setData(with: getConfgirutaion(), barData: data)
+    }
+    
+    func onError(errorString: String) {
+        let alert = UIAlertController(title: "Err", message: errorString, preferredStyle: .alert)
+        let okAlert = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        alert.addAction(okAlert)
+        self.present(alert, animated: true, completion: nil)
     }
     
     private func getConfgirutaion() -> BarChartConfiguration {

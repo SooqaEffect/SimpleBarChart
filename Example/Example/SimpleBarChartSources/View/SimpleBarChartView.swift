@@ -102,21 +102,6 @@ public class SimpleBarChartView: UIView, SimpleBarChartViewProtocol {
         }
     }
     
-    private func addText(frame: CGRect, color: CGColor, fontSize: CGFloat, text: String, animated: Bool, ailgnmentMode: CATextLayerAlignmentMode) {
-        let textLayer = CATextLayer()
-        textLayer.frame = frame
-        textLayer.foregroundColor = color
-        textLayer.backgroundColor = UIColor.clear.cgColor
-        textLayer.alignmentMode = ailgnmentMode
-        textLayer.contentsScale = UIScreen.main.scale
-        textLayer.font = CTFontCreateWithName(UIFont.systemFont(ofSize: 0).fontName as CFString, 0, nil)
-        textLayer.fontSize = fontSize
-        textLayer.string = text
-        
-        mainLayer.addSublayer(textLayer)
-        //add animation
-    }
-    
     private func setBar(entry: BarData, animated: Bool, previousBar: BarData?) {
         let color = entry.data.color.cgColor
         let titleColor = entry.data.titleColor.cgColor
